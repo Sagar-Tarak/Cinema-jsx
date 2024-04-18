@@ -21,7 +21,7 @@ const Movie = () => {
   };
 
   return (
-    <div className="movie">
+    <div className=" movie">
       <div className="movie__intro">
         <img
           className="movie__backdrop"
