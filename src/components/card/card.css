@@ -1,13 +1,14 @@
 .cards {
-    display: inline-block;
+    display: grid;
     transition: transform .2s;
+    position: relative;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     margin: 1.5rem;
     cursor:pointer;
-    min-width:200px;
-    height:300px;
+    min-width:12.5rem;
+    height:18.75rem;
     z-index:0;
     border: 1px solid rgb(99, 99, 99);
    
@@ -20,14 +21,14 @@
 }
 
 .card__img {
-    height: 300px;
+    height: 18.75rem;
 }
 
 .cards__overlay {
     position: absolute;
     padding: 0 1rem 1rem 1rem;
     bottom: 0px;
-    height: 290px;
+    height: 18.125rem;
     display: flex;
     flex-direction: column;
     width: 100%;
