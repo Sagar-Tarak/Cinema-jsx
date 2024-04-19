@@ -1,145 +1,229 @@
 .movie {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .movie__intro {
-    width: 80%;
+  width: 80vw;
 }
 
 .movie__backdrop {
-    width: 100%;
-    height: 31.25rem;
-    object-fit:cover;
-    object-position: 0 35%;
+  width: 100%;
+  height: 31.25rem;
+  object-fit: cover;
+  object-position: 0 35%;
 }
 
 .movie__detail {
-    align-items: center;
-    width: 75%;
-    display: flex;
-    position: relative;
-    bottom: 1.563rem;
+  align-items: center;
+  width: 75%;
+  display: flex;
+  position: relative;
+  bottom: 1.563rem;
 }
 
 .movie__detailLeft {
-    margin-right: 1.875rem;
+  margin-right: 1.875rem;
 }
 
 .movie__poster {
-    width:18.75rem;
-    border-radius: 0.62rem;
-    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+  width: 18.75rem;
+  border-radius: 0.62rem;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
 }
 
 .movie__detailRight {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 28.125rem;
-    justify-content:space-between ;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 28.125rem;
+  justify-content: space-between;
 }
 
-.movie__detailRightTop > div{
-    text-shadow: 0px 0px 5px #000000;
-    margin-bottom: .5rem;
+.movie__detailRightTop > div {
+  text-shadow: 0px 0px 5px #000000;
+  margin-bottom: 0.5rem;
 }
 
 .movie__name {
-    font-weight: 600;
-    font-size: 3rem;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 .movie__voteCount {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .movie__genres {
-    margin: 1.25rem 0;
+  margin: 1.25rem 0;
 }
 
 .movie__genre {
-    padding: .5rem;
-    border: 2px solid white;
-    border-radius: 20px;
-    margin-right: 1rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
 }
 
-
 .movie__detailRightBottom {
-    margin: 2rem 0;
-    flex: 0.8;
+  margin: 2rem 0;
+  flex: 0.8;
 }
 
 .synopsisText {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
-    font-weight: 600;
-    display: flex;
-    position: relative;
-    align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 .synopsisText > div:last-of-type {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .movie__links {
-    position: relative;
-    bottom: 7.5rem;
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
+  position: relative;
+  bottom: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
 }
 
 .movie__heading {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 .movie__Button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem 2rem;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 150px;
-    color: black;
-    font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  color: black;
+  font-weight: bold;
 }
 
 .movie__homeButton {
-    background-color:rgb(255, 0, 0);
-    
+  background-color: rgb(255, 0, 0);
 }
 
 .movie__imdbButton {
-    background-color:#f3ce13;
+  background-color: #f3ce13;
 }
 
 .newTab {
-    margin-left: 1.4rem;
+  margin-left: 1.4rem;
 }
 
 .movie__production {
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 4rem;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 4rem;
 }
 
-
 .movie__productionComapany {
-    width: 200px;
-    margin: 2rem;
+  width: 200px;
+  margin: 2rem;
 }
 
 .productionCompanyImage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .movie {
+    width: 250px;
+  }
+  .movie__intro {
+    width: 600px;
+    position: relative;
+  }
+
+  .movie__backdrop {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 35%;
+  }
+
+  .movie__detail {
+    width: 100%;
+    bottom: 1rem;
+    align-items: flex-start;
+  }
+  .movie__detailLeft {
+    margin-right: 1rem;
+    /* height: 150px;
+        width: ; */
+  }
+
+  .movie__poster {
+    width: 130px;
+    padding-left: 10px;
+  }
+
+  .movie__detailRight {
+    height: 100%;
+    width: 100%;
+  }
+
+  .movie__heading {
+    font-size: 1.5rem;
+  }
+
+  .movie__name {
+    font-size: 1.8rem;
+  }
+
+  .movie__tagline {
+    font-size: 1rem;
+  }
+  .movie__genres {
+    width: 100%;
+    font-size: 9px;
+    /* padding: 5px; */
+  }
+  .movie__genre {
+    padding: 0.3rem;
+    margin-right: 5px;
+  }
+  .movie__detailRightBottom {
+    width: 100%;
+  }
+
+  .movie__links {
+    width: 100px;
+    padding-top: 100px;
+  }
+  .movie__heading {
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+  }
+  .movie__Button {
     justify-content: center;
+    width: 100px;
+    }
+
+    .movie__homeButton {
+       text-align: center;
+      }
+      
+      .movie__imdbButton {
+        text-align: center;
+      }
+     .movie__heading{
+        font-size: 1rem;
+     }
 }

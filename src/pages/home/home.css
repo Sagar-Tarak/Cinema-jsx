@@ -5,16 +5,15 @@
 .posterImage > img {
     margin: auto;
     display: block;
-    width: inherit;
-    height: inherit;
-    
+    width: 550px;
+    height: 37rem;
 }
 
 .posterImage__overlay {
     position: absolute;
     padding: 5rem;
     bottom: 0px;
-    height: 10%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -32,7 +31,7 @@
 .posterImage__title {
     font-weight: 900;
     
-    font-size: 2cqmax ;
+    font-size: 45px ;
     /* font-size: 4rem; */
     margin-bottom: 0.4rem;
     text-align: left;
@@ -54,4 +53,25 @@
     display: flex;
     text-align: left;
     width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .posterImage{
+        height: 350px;
+    }
+    .posterImage__title{
+        font-size: 20px;
+    }
+    .posterImage__runtime{
+        font-size: 10px ;
+        font-weight: 500;
+    }
+    .posterImage__description{
+        font-size: 10px;
+        width: 100%;
+    }
+    .posterImage__overlay {
+        height: 150px;
+    }
 }

@@ -7,7 +7,7 @@
     overflow: hidden;
     margin: 1.5rem;
     cursor:pointer;
-    min-width:12.5rem;
+    width:12.5rem;
     height:18.75rem;
     z-index:0;
     border: 1px solid rgb(99, 99, 99);
@@ -61,4 +61,17 @@
     font-style: italic;
     font-size: .75rem;
     margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .cards{
+        height: 14rem;
+        width: 8rem;
+        margin: 1rem;
+    }
+    .card__img {
+        height: 14rem ;
+        width: 8rem;
+
+    }
 }
